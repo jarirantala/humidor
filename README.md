@@ -17,7 +17,7 @@ https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
 Project still missing the scripts for Pi.
 
-### AWS
+### AWS cloud service
 
 To store the data from humidor and publish it on a website.
 
