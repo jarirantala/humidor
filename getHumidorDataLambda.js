@@ -45,7 +45,7 @@ module.exports.get = (event, context, callback) => {
     if (event.httpMethod == 'GET') {
       dynamo.scan({ TableName: 'humidor', Limit: 10 }, function(err, data) {
         if (err) {
-          console.log("Error", err);
+          done(err, data);
         } else {
           data.Items = orderByDate(data.Items);
           data.Items.forEach(function(element, index, array) {
