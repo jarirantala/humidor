@@ -30,3 +30,9 @@ https://aws.amazon.com
 For AWS deployment.
 
 https://serverless.com
+
+##### Serverless Finch plugin
+
+For AWS S3 static website deployment
+
+https://www.npmjs.com/package/serverless-finch
