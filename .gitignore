@@ -22,7 +22,7 @@ ehthumbs.db
 Thumbs.db
 
 *.ppt*
-test.txt
+*.txt
 humidori.yaml
 node_modules/
 morris.js-0.5.1/
