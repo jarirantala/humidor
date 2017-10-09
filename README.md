@@ -21,7 +21,7 @@ TODO: add the scripts for Pi into repository.
 
 ### AWS cloud service
 
-A serverless solution to store the data from humidor and publish it on a website.
+A serverless solution to subscribe to the data from Pi, save it into a dynamodb table, and publish it on an S3 website.
 
 Services in use: IoT, Lambda, DynamoDB, S3
 
