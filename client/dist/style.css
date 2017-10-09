@@ -1,0 +1,19 @@
+div.chart1 {
+  height: 50%;
+  width:100%;
+  background: #e0ebeb;
+  border-color: #d1e0e0;
+  border-style: solid;
+}
+
+div.chart2 {
+  height: 50%;
+  width:100%;
+  background: #e0e0d1;
+  border-color: #d6d6c2;
+  border-style: solid;
+}
+
+h3 {
+  font-family: 'Ubuntu', serif;
+}
