@@ -33,6 +33,8 @@ For AWS deployment.
 
 https://serverless.com
 
+TODO: Add dynamodb table
+
 ##### Serverless Finch plugin
 
 For AWS S3 static website deployment
