@@ -25,3 +25,26 @@ functions:
       - http: GET humidori
     memorySize: 128
     timeout: 10
+resources:
+  Resources:
+    HumidorTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          -
+            AttributeName: timestamp
+            AttributeType: S
+          -
+            AttributeName: expiration_time
+            AttributeType: S
+        KeySchema:
+          -
+            AttributeName: timestamp
+            KeyType: HASH
+          -
+            AttributeName: expiration_time
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: humidor2
