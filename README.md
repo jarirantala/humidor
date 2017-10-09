@@ -43,6 +43,6 @@ https://www.npmjs.com/package/serverless-finch
 
 #### Morris.js
 
-A very simple js chart library
+A very simple js chart library. Requires also jquery.
 
 http://morrisjs.github.io/morris.js/index.html
