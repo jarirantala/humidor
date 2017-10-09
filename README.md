@@ -40,3 +40,9 @@ TODO: Add dynamodb table and IoT rule
 For AWS S3 static website deployment
 
 https://www.npmjs.com/package/serverless-finch
+
+#### Morris.js
+
+A very simple js chart library
+
+http://morrisjs.github.io/morris.js/index.html
