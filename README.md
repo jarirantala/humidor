@@ -7,13 +7,13 @@ Read temperature and humidity from my cigar humidor using Ruuvitag sensor. Data 
 
 ### Ruuvitag
 
-To collect the data from my humidor.
+To measure the data in my humidor.
 
 https://tag.ruuvi.com
 
 ### Raspberry Pi w/ bt and wi-fi
 
-To read data from Ruuvitag and publish it into AWS IoT service.
+To collect data from Ruuvitag and publish it into AWS IoT service.
 
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 

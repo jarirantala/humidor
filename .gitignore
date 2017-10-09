@@ -21,6 +21,7 @@
 ehthumbs.db
 Thumbs.db
 
+*.ppt*
 test.txt
 humidori.yaml
 node_modules/
