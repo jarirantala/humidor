@@ -15,7 +15,7 @@ To read data from Ruuvitag and publish it into AWS IoT service.
 
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
-Project still missing the scripts for Pi.
+TODO: add the scripts for Pi into repository.
 
 ### AWS cloud service
 
