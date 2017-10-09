@@ -23,7 +23,7 @@ TODO: add the scripts for Pi into repository.
 
 A serverless solution to subscribe to the data from Pi, save it into a dynamodb table using an IoT rule, and publish it on an S3 website.
 
-Services in use: IoT, Lambda, DynamoDB, S3
+Services in use: [IoT](https://aws.amazon.com/iot/), [Lambda](https://aws.amazon.com/lambda/), [DynamoDB](https://aws.amazon.com/dynamodb/), [S3](https://aws.amazon.com/s3/)
 
 https://aws.amazon.com
 
