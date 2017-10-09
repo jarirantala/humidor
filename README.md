@@ -33,7 +33,7 @@ For AWS deployment.
 
 https://serverless.com
 
-TODO: Add dynamodb table
+TODO: Add dynamodb table and IoT rule
 
 ##### Serverless Finch plugin
 
