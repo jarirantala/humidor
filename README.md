@@ -34,7 +34,7 @@ For AWS deployment.
 Usage:
 - *serverless deploy* to deploy the backend application w/ database
 - *serverless client deploy* to deploy static files to S3
-- *serverless deploy function -f humidor* to deploy only the function
+- *serverless deploy function -f humidor* to deploy only the lambda function
 
 https://serverless.com
 
