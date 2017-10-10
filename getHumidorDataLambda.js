@@ -37,10 +37,12 @@ module.exports.get = (event, context, callback) => {
     }
 
     if (event.httpMethod == 'GET') {
-      dynamo.scan({ TableName: 'humidor', Limit: 10 }, function(err, data) {
+      dynamo.scan({ TableName: 'humidor' }, function(err, data) {
         if (err) {
           done(err, data);
         } else {
+          data.Items.reverse()
+          data.Items = data.Items.slice(1, 11);
           data.Items.forEach(function(element, index, array) {
             element.timestamp = element.timestamp * 1000;
           });
