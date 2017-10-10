@@ -17,7 +17,7 @@ To collect data from Ruuvitag and publish it into AWS IoT service.
 
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
-Usage: run the python3 script in raspberrypi-folder in your raspberry to collect sensor data.
+Usage: run the python3 script in raspberrypi-folder in your raspberry to collect sensor data. Preferably with "nohup python3 async_pub.py &" or as a service.
 
 ### AWS cloud service
 
