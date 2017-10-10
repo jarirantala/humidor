@@ -18,24 +18,6 @@ module.exports.get = (event, context, callback) => {
         },
     });
 
-    function getFormattedDate(datetime) {
-        var month = datetime.getMonth() + 1;
-        var day = datetime.getDate();
-        var year = datetime.getFullYear();
-        return day + "." + month;
-    }
-
-    function getFormattedTime(datetime) {
-        var hours = datetime.getUTCHours().toString().length == 1 ? '0' + datetime.getUTCHours() : datetime.getUTCHours();
-        var minutes = datetime.getMinutes().toString().length == 1 ? '0' + datetime.getMinutes() : datetime.getMinutes();
-        var seconds = datetime.getSeconds().toString().length == 1 ? '0' + datetime.getSeconds() : datetime.getSeconds();
-        return hours + ":" + minutes + ":" + seconds;
-    }
-
-    function getFormattedDatetime(datetime) {
-        return getFormattedDate(datetime) + " " + getFormattedTime(datetime);
-    }
-
     if (event.httpMethod == 'GET') {
       dynamo.scan({ TableName: 'humidor' }, function(err, data) {
         if (err) {
