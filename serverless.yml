@@ -1,4 +1,4 @@
-service: humidori
+service: humidor
 plugins:
   - serverless-finch
 custom:
@@ -17,11 +17,34 @@ provider:
         - dynamodb:Query
         - dynamodb:Scan
         - dynamodb:GetItem
-      Resource: arn:aws:dynamodb:*:*:table/humidori
+      Resource: arn:aws:dynamodb:*:*:table/humidor
 functions:
-  weather:
+  humidor:
     handler: getHumidorDataLambda.get
     events:
       - http: GET humidori
     memorySize: 128
     timeout: 10
+resources:
+  Resources:
+    HumidorTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          -
+            AttributeName: source
+            AttributeType: S
+          -
+            AttributeName: timestamp
+            AttributeType: S
+        KeySchema:
+          -
+            AttributeName: source
+            KeyType: HASH
+          -
+            AttributeName: timestamp
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: humidor
