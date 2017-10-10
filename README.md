@@ -17,7 +17,7 @@ To collect data from Ruuvitag and publish it into AWS IoT service.
 
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
-TODO: add the scripts for Pi into repository.
+Usage: run the python3 script in raspberrypi-folder in your raspberry to collect sensor data.
 
 ### AWS cloud service
 
@@ -38,7 +38,7 @@ Usage:
 
 https://serverless.com
 
-TODO: Add dynamodb table and IoT rule
+TODO: Add IoT rule
 
 ##### Serverless Finch plugin
 
