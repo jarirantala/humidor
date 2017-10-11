@@ -56,6 +56,6 @@ A very simple js chart library. Requires also jquery.
 
 http://morrisjs.github.io/morris.js/index.html
 
-## Screenshot
+#### Screenshot
 
 ![Alt text](images/screenshot.png?raw=true "Screenshot")
