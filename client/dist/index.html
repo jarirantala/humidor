@@ -1,0 +1,75 @@
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+
+    <title>Jarin humidori</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="morris.css">
+    <script src="jquery.min.js"></script>
+    <script src="raphael.min.js"></script>
+    <script src="morris.min.js"></script>
+
+  </head>
+  <body>
+    <h3>Humidity</h3>
+    <div id="humidity" class="chart1"></div>
+    <h3>Temp</h3>
+    <div id="temperature" class="chart2"></div>
+  </body>
+</html>
+<script>
+var datas;
+$.ajax({
+  url: "your api gateway endpoint",
+  success: function(json) {
+    datas = json.Items;
+    new Morris.Line({
+      // ID of the element in which to draw the chart.
+      element: 'humidity',
+      // Chart data records -- each entry in this array corresponds to a point on
+      // the chart.
+      data: datas,
+      // The name of the data record attribute that contains x-values.
+      xkey: 'timestamp',
+      // A list of names of data record attributes that contain y-values.
+      ykeys: ['humidity'],
+      // Labels for the ykeys -- will be displayed when you hover over the
+      // chart.
+      ymax: 80,
+      ymin: 60,
+      gridTextSize: 20,
+      labels: ['humidity'],
+      parseTime: true,
+      postUnits: '%',
+      xLabels: '15min',
+      dateFormat: function (x) { var d = new Date(x); return d.getHours() + ':' + d.getMinutes();},
+      resize: true
+    });
+    new Morris.Line({
+      // ID of the element in which to draw the chart.
+      element: 'temperature',
+      // Chart data records -- each entry in this array corresponds to a point on
+      // the chart.
+      data: datas,
+      // The name of the data record attribute that contains x-values.
+      xkey: 'timestamp',
+      // A list of names of data record attributes that contain y-values.
+      ykeys: ['temperature'],
+      // Labels for the ykeys -- will be displayed when you hover over the
+      // chart.
+      ymax: 25,
+      ymin: 15,
+      gridTextSize: 20,
+      labels: ['temp'],
+      parseTime: true,
+      postUnits: '℃',
+      resize: true,
+      dateFormat: function (x) { var d = new Date(x); return d.getHours() + ':' + d.getMinutes();},
+      xLabels: '15min'
+    });
+  }
+});
+</script>
