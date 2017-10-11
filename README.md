@@ -1,4 +1,4 @@
-# humidor
+# Humidor
 Read temperature and humidity from my cigar humidor using Ruuvitag sensor. Data is read by Raspberry Pi and published in AWS via their IoT service.
 
 ![Alt text](images/architecture.png?raw=true "Architecture")
