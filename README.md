@@ -3,7 +3,7 @@ Read temperature and humidity from my cigar humidor using Ruuvitag sensor. Data 
 
 ![Alt text](images/architecture.png?raw=true "Architecture")
 
-## Dependencies
+## Building Blocks
 
 ### Ruuvitag
 
