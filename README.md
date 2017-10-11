@@ -56,4 +56,4 @@ http://morrisjs.github.io/morris.js/index.html
 
 ## Screenshot
 
-![Alt text](images/screenshot.png?raw=true "Screenshot")
+![Alt text](images/screenshot.png?raw=true "Screenshot" | width=400)
