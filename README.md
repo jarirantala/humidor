@@ -19,6 +19,8 @@ https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
 Usage: run the python3 script in raspberrypi-folder in your raspberry to collect sensor data. Preferably with *nohup python3 async_pub.py &* or as a service.
 
+Requires https://github.com/aws/aws-iot-device-sdk-python and https://github.com/ttu/ruuvitag-sensor
+
 ### AWS cloud service
 
 A serverless solution to subscribe to the data from Pi, save it into a dynamodb table using an IoT rule, and publish it on an S3 website.
