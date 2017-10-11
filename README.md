@@ -40,7 +40,7 @@ Usage:
 
 https://serverless.com
 
-TODO: Add IoT rule
+TODO: Add IoT rule and TTL to dynamo table
 
 ##### Serverless Finch plugin
 
