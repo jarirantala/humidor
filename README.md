@@ -1,7 +1,7 @@
 # humidor
 Read temperature and humidity from my cigar humidor using Ruuvitag sensor. Data is read by Raspberry Pi and published in AWS via their IoT service.
 
-![Alt text](architecture.png?raw=true "Architecture")
+![Alt text](images/architecture.png?raw=true "Architecture")
 
 ## Dependencies
 
@@ -53,3 +53,7 @@ https://www.npmjs.com/package/serverless-finch
 A very simple js chart library. Requires also jquery.
 
 http://morrisjs.github.io/morris.js/index.html
+
+## Screenshot
+
+![Alt text](images/screenshot.png?raw=true "Screenshot")
