@@ -101,7 +101,7 @@ while True:
     exp = now + timedelta(hours = 3)
     expiration_date = str(int(exp.timestamp()))
     timestamp = str(int((now.timestamp()))
-    msg = '{"timestamp": "' + timestamp + '", "expiration_date": "' + expiration_date + '", "humidity": "' + hum  + '", "temperature": "' + tem + '"$
+    msg = '{"timestamp": ' + timestamp + ', "expiration_date": ' + expiration_date + ', "humidity": "' + hum  + '", "temperature": "' + tem + '"$
     myAWSIoTMQTTClient.publishAsync(topic, msg, 1, ackCallback=customPubackCallback)
     loopCount += 1
     time.sleep(900)
