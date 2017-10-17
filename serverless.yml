@@ -1,4 +1,4 @@
-service: humidor
+service: humidori
 plugins:
   - serverless-finch
 custom:
@@ -10,14 +10,14 @@ provider:
   profile: jari
   region: eu-central-1
   environment:
-    HUMIDOR_TABLE: humidor
+    HUMIDOR_TABLE: humidori
   iamRoleStatements:
     - Effect: Allow
       Action:
         - dynamodb:Query
         - dynamodb:Scan
         - dynamodb:GetItem
-      Resource: arn:aws:dynamodb:*:*:table/humidor
+      Resource: arn:aws:dynamodb:*:*:table/humidori
 functions:
   humidor:
     handler: getHumidorDataLambda.get
@@ -36,7 +36,7 @@ resources:
             AttributeType: S
           -
             AttributeName: timestamp
-            AttributeType: S
+            AttributeType: N
         KeySchema:
           -
             AttributeName: source
@@ -47,4 +47,4 @@ resources:
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
-        TableName: humidor
+        TableName: humidori
